@@ -14,7 +14,7 @@ var handlers = require('./lib/handlers');
 var helpers = require('./lib/helpers');
 
 // Testing Stripe api
-var stripeOptions = {
+/* var stripeOptions = {
   'amount' : 1000,
   'currency' : 'usd',
   'orderId' : 123456789,
@@ -25,7 +25,7 @@ var stripeOptions = {
 
 helpers.processPayment(stripeOptions,function(res){
   console.log('response: '+res);
-})
+}) */
 
 // Instantiate the HTTP server
 var httpServer = http.createServer(function(req, res){
