@@ -126,5 +126,6 @@ var router = {
   'carts/items/add' : handlers.carts,
   'carts/items/update' : handlers.carts,
   'carts/items/remove' : handlers.carts,
-  'carts/items/empty' : handlers.carts
+  'carts/items/empty' : handlers.carts,
+  'orders' : handlers.orders
 };
