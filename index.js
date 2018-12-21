@@ -122,10 +122,10 @@ var router = {
   'users' : handlers.users,
   'tokens' : handlers.tokens,
   'menu' : handlers.menu,
+  'orders' : handlers.orders,
   'carts' : handlers.carts,
   'carts/items/add' : handlers.carts,
   'carts/items/update' : handlers.carts,
   'carts/items/remove' : handlers.carts,
-  'carts/items/empty' : handlers.carts,
-  'orders' : handlers.orders
+  'carts/items/empty' : handlers.carts
 };
