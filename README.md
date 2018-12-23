@@ -92,7 +92,8 @@ Before you can place an order you will need to add some information to the confi
   - phone *number* (required 10 digits)  
   - email *string* (required)  
   - address *string* (required)
-  - password *string* (required)  
+  - password *string* (required)
+  - tosAgreement *boolen* (required - must be true)  
 
 **[GET]**:  
   Parameters:  
