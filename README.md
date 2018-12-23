@@ -85,7 +85,7 @@ Before you can place an order you will need to add some information to the confi
 
 **Allowable methods:** POST, GET, PUT, DELETE  
 
-**[POST]**:
+**[POST]**:  
   Parameters:  
   - firstName *string* (required)
   - lastName *string* (required)  
@@ -97,7 +97,7 @@ Before you can place an order you will need to add some information to the confi
 **[GET]**:  
   Parameters:  
   - phone *number* (required 10 digits)
-  
+
   Required header keys:
   - token
 
@@ -109,6 +109,7 @@ Before you can place an order you will need to add some information to the confi
   - email *string* (optional)  
   - address *string* (optional)
   - password *string* (optional)  
-  *at least one optional parameter must be supplied  
+  *at least one optional parameter must be supplied*
+
   Required header keys:
   - token
