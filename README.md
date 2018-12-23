@@ -9,9 +9,12 @@ This api serves as the backend for a pizza delivery company. I allows users to b
 
 ### Create a user ###
 
-**Pate:** /users
+**Path:** /users
+
 **Method:** POST
+
 **Body:**
+
 ```json
 {
   'firstName' : 'Abe',
@@ -21,5 +24,5 @@ This api serves as the backend for a pizza delivery company. I allows users to b
   'address' : '100 Main Street, Gettysburg, PA 11111',
   'tosAgreement' : true
 }
-
+```
 ## API Documentation ##
