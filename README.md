@@ -94,9 +94,9 @@ Before you can place an order you will need to add some information to the confi
   - address *string* (required)
   - password *string* (required)  
 
-**[GET]**:
-  Parameters:   
-  - phone *number* (required 10 digits)  
+**[GET]**:  
+  Parameters:  
+  - phone *number* (required 10 digits)
   Required header keys:
   - token
 
