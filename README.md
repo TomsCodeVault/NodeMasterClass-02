@@ -7,7 +7,7 @@ This api serves as the backend for a pizza delivery company. It allows users to 
 
 ## Testing the API ##
 
-Before you can place an order you will need to add some information to the config.js file. Open the config.js file for editing and fill in the areas between the `<>` symbols.
+Before you can place an order you will need to add some information to the config.js file. Open the config.js file for editing and fill in the areas between the `<>` symbols with your stripe.com and mailgun credentials.
 
 ### Create a user ###
 
@@ -77,5 +77,37 @@ Before you can place an order you will need to add some information to the confi
 ```
 
 
+# API Documentation #
 
-## API Documentation ##
+## Routes ##
+
+### /users ###
+
+**Allowable methods:** POST, GET, PUT, DELETE  
+
+**[POST]**:
+  Parameters:  
+  - firstName *string* (required)
+  - lastName *string* (required)  
+  - phone *number* (required 10 digits)  
+  - email *string* (required)  
+  - address *string* (required)
+  - password *string* (required)  
+
+**[GET]**:
+  Parameters:   
+  - phone *number* (required 10 digits)  
+  Required header keys:
+  - token
+
+**[PUT]**:
+  Parameters:  
+  - firstName *string* (optional)
+  - lastName *string* (required)  
+  - phone *number* (optional)  
+  - email *string* (optional)  
+  - address *string* (optional)
+  - password *string* (optional)  
+  *at least one optional parameter must be supplied  
+  Required header keys:
+  - token
