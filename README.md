@@ -97,6 +97,7 @@ Before you can place an order you will need to add some information to the confi
 **[GET]**:  
   Parameters:  
   - phone *number* (required 10 digits)
+  
   Required header keys:
   - token
 
