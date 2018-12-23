@@ -17,12 +17,12 @@ This api serves as the backend for a pizza delivery company. I allows users to b
 
 ```json
 {
-  'firstName' : 'Abe',
-  'lastName' : 'Lincoln',
-  'phone' : 8881231234,
-  'email' : 'abe@lincoln.com',
-  'address' : '100 Main Street, Gettysburg, PA 11111',
-  'tosAgreement' : true
+  "firstName" : "Abe",
+  "lastName" : "Lincoln",
+  "phone" : 9991234567,
+  "email" : "abe@lincoln.com",
+  "address" : "1860 Blue St, Gettysburg, PA 12345",
+  "tosAgreement" : true
 }
 ```
 ## API Documentation ##
