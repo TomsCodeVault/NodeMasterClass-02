@@ -11,8 +11,8 @@ Before you can place an order you will need to add some information to the confi
 
 ### Create a user ###
 
-**Path:** /users
-**Method:** POST
+**Path:** /users  
+**Method:** POST  
 **Body Example:**
 
 ```json
@@ -29,10 +29,8 @@ Before you can place an order you will need to add some information to the confi
 
 ### Get a Token ###
 
-**Path:** /tokens
-
-**Method:** POST
-
+**Path:** /tokens  
+**Method:** POST  
 **Body Example:**
 
 ```json
@@ -44,18 +42,14 @@ Before you can place an order you will need to add some information to the confi
 
 ### Get menu items ###
 
-**Path:** /menu
-
-**Method:** GET
-
+**Path:** /menu  
+**Method:** GET  
 *no parameters required*
 
 ### Add items to cart ###
 
-**Path:** /carts/items/add
-
-**Method:** PUT
-
+**Path:** /carts/items/add  
+**Method:** PUT  
 **Required:** token key in header with valid token value returned by the earlier post to /tokens
 
 **Body Example:**
@@ -70,10 +64,8 @@ Before you can place an order you will need to add some information to the confi
 
 ### Place Order ###
 
-**Path:** /orders
-
-**Method:** POST
-
+**Path:** /orders  
+**Method:** POST  
 **Required:** token key in header with valid token value returned by the earlier post to /tokens
 
 **Body Example:**
