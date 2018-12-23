@@ -96,7 +96,7 @@ Before you can place an order you will need to add some information to the confi
 
 **[GET]**:  
   Parameters:  
-  - phone *number* (required 10 digits)
+  - phone *number* (required in queryString)
 
   Required header keys:
   - token
@@ -110,6 +110,144 @@ Before you can place an order you will need to add some information to the confi
   - address *string* (optional)
   - password *string* (optional)  
   *at least one optional parameter must be supplied*
+
+  Required header keys:
+  - token
+
+**[DELETE]**:  
+  Parameters:  
+  - phone *number* (required in queryString)
+
+  Required header keys:
+  - token
+
+### /tokens ###
+
+**Allowable methods:** POST, GET, PUT, DELETE  
+
+**[POST]**:  
+  Parameters:    
+  - phone *number* (required 10 digits)
+  - password *string* (required)
+
+**[GET]**:  
+  Parameters:  
+  - id *string* (required in queryString)
+
+**[PUT]**:
+  Parameters:  
+  - id *string* (required)
+  - extend *boolean* (required true)
+
+**[DELETE]**:  
+  Parameters:  
+  - id *string* (required in queryString)
+
+  Required header keys:
+  - token
+
+### /carts ###
+
+**Allowable methods:** GET
+
+**[GET]**:
+  Parameters:  
+  - phone *string* (required in queryString)
+
+  Required header keys:
+  - token
+
+### /carts/items/add ###
+
+**Allowable methods:** PUT
+
+**[PUT]**:
+  Parameters:  
+  - phone *string* (required)
+  - menuId *string* (required)
+  - quantity *number* (required)
+
+  Required header keys:
+  - token
+
+### /carts/items/update ###
+
+**Allowable methods:** PUT
+
+**[PUT]**:
+  Parameters:  
+  - phone *string* (required)
+  - cartItemId *string* (required)
+  - quantity *number* (required)
+
+  Required header keys:
+  - token
+
+### /carts/items/remove ###
+
+**Allowable methods:** PUT
+
+**[PUT]**:
+  Parameters:  
+  - phone *string* (required)
+  - cartItemId *string* (required)
+
+  Required header keys:
+  - token
+
+### /carts/items/empty ###
+
+**Allowable methods:** PUT
+
+**[PUT]**:
+  Parameters:  
+  - phone *string* (required)
+
+  Required header keys:
+  - token
+
+### /menu ###
+
+**Allowable methods:** POST, GET, PUT, DELETE  
+
+**[POST]**:  
+  Parameters:    
+  - description *string* (required)
+  - price *number* (required)
+
+**[GET]**:  
+  Parameters:  
+  - id *string* (optional in queryString)
+
+**[PUT]**:
+  Parameters:  
+  - id *string* (required)
+  - description *string* (optional)
+  - price *number* (optional)  
+  *at least one optional parameter is required*
+
+**[DELETE]**:  
+  Parameters:  
+  - id *string* (required in queryString)
+
+  Required header keys:
+  - token
+
+### /orders ###
+
+**Allowable methods:** POST, GET  
+
+**[POST]**:  
+  Parameters:    
+  - phone *number* (required)
+  - date *string* (optional - must be a valid date string)
+
+  Required header keys:
+  - token
+
+**[GET]**:  
+  Parameters:  
+  - orderId *string* (required in queryString - must be valid numberic value)
 
   Required header keys:
   - token
