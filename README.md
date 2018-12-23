@@ -247,7 +247,7 @@ Before you can place an order you will need to add some information to the confi
 
 **[GET]**:  
   Parameters:  
-  - orderId *string* (required in queryString - must be valid numberic value)
+  - orderId *number* (required in queryString - must be valid numberic value)
 
   Required header keys:
   - token
